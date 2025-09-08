@@ -8,6 +8,10 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "PassengerReviews")
-public class PassengerReview extends Reviews {
+public class PassengerReview extends Review {
+
+    @Column(nullable = false)
     public String PassengerReviewContent;
+
+    private String PassengerRating;
 }

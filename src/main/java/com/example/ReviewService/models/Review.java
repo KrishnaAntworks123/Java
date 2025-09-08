@@ -10,8 +10,8 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public class Reviews extends BaseModel {
+@Inheritance(strategy = InheritanceType.JOINED)
+public class Review extends BaseModel {
 
     @Column(nullable = false)
     private String content;
